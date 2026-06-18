@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larry French, M.A., LPC, LMFT | Books on Marriage, Healing & Personal Transformation</title>
+  <meta name="description" content="Books by Larry French — licensed counselor, marriage and family therapist, and founder of Virginia Center for Family Relations. Practical guidance on marriage, recovery, emotional healing, and personal growth." />
+  <meta name="keywords" content="Larry French books, marriage counselor author, Virginia Center for Family Relations, Gottman therapist, Christian counseling books, marriage healing, addiction recovery, emotional healing, self-help books" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Larry French, LPC, LMFT | Books on Marriage, Healing & Transformation" />
+  <meta property="og:description" content="Practical, compassionate books by a licensed counselor and marriage therapist with over 40 years of experience helping families heal." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/0D1B2A/C9A84C?text=Larry+French+Books" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Larry L. French",
+    "jobTitle": "Licensed Professional Counselor & Marriage and Family Therapist",
+    "description": "Licensed Professional Counselor (LPC) and Licensed Marriage and Family Therapist (LMFT) with an M.A. in Marriage, Family and Child Counseling. Founder and Executive Director of Virginia Center for Family Relations. Gottman Level III trained couples therapist and Focus on the Family referral resource.",
+    "url": "https://www.vcfr.org",
+    "sameAs": ["https://www.amazon.com/stores/author/B0FV5RBMQY"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── TOKENS ──────────────────────────────── */
+    :root {
+      --navy:        #0D1B2A;
+      --navy-mid:    #1A2F45;
+      --navy-light:  #263F57;
+      --gold:        #C9A84C;
+      --gold-light:  #E8C97A;
+      --gold-pale:   #FDF6E3;
+      --white:       #FAFAF8;
+      --slate:       #4A5568;
+      --slate-light: #718096;
+      --cream:       #F7F3EC;
+      --text:        #1A202C;
+
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-body:    'Inter', system-ui, sans-serif;
+
+      --radius-sm:  6px;
+      --radius-md:  12px;
+      --radius-lg:  20px;
+
+      --shadow-sm:  0 2px 8px rgba(13,27,42,0.08);
+      --shadow-md:  0 8px 32px rgba(13,27,42,0.12);
+      --shadow-lg:  0 20px 60px rgba(13,27,42,0.18);
+
+      --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ── RESET ───────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ── BASE ────────────────────────────────── */
+    body {
+      font-family: var(--ff-body);
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── SKIP LINK (ADA) ─────────────────────── */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 1rem;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      z-index: 9999;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    /* ── NAV ─────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 5%;
+      background: rgba(13,27,42,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      transition: var(--transition);
+    }
+    .nav-brand {
+      font-family: var(--ff-display);
+      font-size: 1.2rem;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .nav-brand span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-links a {
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(250,250,248,0.75);
+      transition: color var(--transition);
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      font-weight: 600 !important;
+      padding: 0.55rem 1.4rem;
+      border-radius: var(--radius-sm);
+      letter-spacing: 0.05em !important;
+      transition: background var(--transition), transform var(--transition) !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--transition); }
+
+    /* ── HERO ────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 70px;
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 70% at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 5% 5rem 8%;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      font-family: var(--ff-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 2px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .hero h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: rgba(250,250,248,0.78);
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      padding: 0.9rem 2rem;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--gold);
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.35); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--white);
+      font-weight: 500;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      padding: 0.9rem 2rem;
+      border-radius: var(--radius-sm);
+      border: 2px solid rgba(250,250,248,0.3);
+      cursor: pointer;
+      transition: border-color var(--transition), color var(--transition), transform var(--transition);
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .hero-trust-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .trust-num {
+      font-family: var(--ff-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .trust-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(250,250,248,0.55);
+      margin-top: 2px;
+    }
+    .trust-divider { width: 1px; height: 36px; background: rgba(250,250,248,0.15); }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+    .hero-image-wrap {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-image-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(201,168,76,0.15) 0%, rgba(13,27,42,0.3) 100%);
+      z-index: 1;
+    }
+    .author-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      background: linear-gradient(160deg, #1A2F45 0%, #263F57 50%, #1A2F45 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      position: relative;
+    }
+    .author-photo-placeholder .photo-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.15);
+      border: 2px dashed rgba(201,168,76,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .author-photo-placeholder .photo-icon svg { opacity: 0.5; }
+    .author-photo-placeholder p {
+      font-size: 0.8rem;
+      color: rgba(250,250,248,0.4);
+      letter-spacing: 0.05em;
+    }
+    .hero-badge {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      background: rgba(13,27,42,0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 1.5rem;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .hero-badge strong {
+      display: block;
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      color: var(--white);
+    }
+    .hero-badge span {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── SECTION SHARED ──────────────────────── */
+    section { padding: 6rem 5%; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .section-heading {
+      font-family: var(--ff-display);
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--slate);
+      max-width: 560px;
+      line-height: 1.8;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    /* ── ABOUT ───────────────────────────────── */
+    #about { background: var(--cream); }
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-image-wrap {
+      position: relative;
+    }
+    .about-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: linear-gradient(160deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      box-shadow: var(--shadow-lg);
+    }
+    .about-photo-placeholder .photo-icon {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.12);
+      border: 2px dashed rgba(201,168,76,0.35);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .about-photo-placeholder p { font-size: 0.75rem; color: rgba(250,250,248,0.35); }
+    .about-accent {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      width: 120px;
+      height: 120px;
+      background: var(--gold);
+      border-radius: var(--radius-md);
+      z-index: -1;
+      opacity: 0.35;
+    }
+    .credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .credential-tag {
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      padding: 0.4rem 0.9rem;
+      border-radius: 100px;
+    }
+    .about-bio {
+      font-size: 1.05rem;
+      color: var(--slate);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+    }
+    .mission-quote {
+      border-left: 3px solid var(--gold);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+    }
+    .mission-quote p {
+      font-family: var(--ff-display);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    /* ── BOOKS ───────────────────────────────── */
+    #books { background: var(--white); }
+    .books-header {
+      max-width: 1100px;
+      margin: 0 auto 3.5rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .books-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 2rem;
+    }
+    .book-card {
+      background: var(--white);
+      border: 1px solid rgba(13,27,42,0.08);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .book-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .book-cover {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+    .book-cover-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      font-family: var(--ff-display);
+    }
+    .book-cover-placeholder .cover-icon {
+      font-size: 2.5rem;
+      opacity: 0.7;
+    }
+    .book-cover-placeholder .cover-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(250,250,248,0.85);
+      text-align: center;
+      padding: 0 1rem;
+      line-height: 1.3;
+    }
+    .book-cover-placeholder .cover-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(250,250,248,0.45);
+    }
+
+    .book-cover-1 { background: linear-gradient(145deg, #1a2f45, #0d1b2a); }
+    .book-cover-2 { background: linear-gradient(145deg, #2d4a1e, #1a2f0d); }
+    .book-cover-3 { background: linear-gradient(145deg, #4a1e2d, #2a0d1a); }
+    .book-cover-4 { background: linear-gradient(145deg, #1e2d4a, #0d1a2a); }
+    .book-cover-5 { background: linear-gradient(145deg, #2d1e4a, #1a0d2a); }
+
+    .book-spine {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      background: var(--gold);
+      opacity: 0.85;
+    }
+    .book-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.6rem;
+      border-radius: 100px;
+    }
+    .book-body {
+      padding: 1.75rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .book-category {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .book-title {
+      font-family: var(--ff-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+    .book-desc {
+      font-size: 0.9rem;
+      color: var(--slate);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+    .book-benefits {
+      margin-bottom: 1.5rem;
+    }
+    .book-benefits li {
+      font-size: 0.83rem;
+      color: var(--slate);
+      padding: 0.2rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .book-benefits li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+    .btn-amazon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--navy);
+      cursor: pointer;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+      margin-top: auto;
+    }
+    .btn-amazon:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); transform: translateY(-1px); }
+    .amazon-logo { font-size: 0.75rem; opacity: 0.7; }
+
+    /* ── WHY TRUST ───────────────────────────── */
+    #trust { background: var(--navy); padding: 6rem 5%; }
+    .trust-inner { max-width: 1100px; margin: 0 auto; }
+    .trust-inner .section-heading { color: var(--white); }
+    .trust-inner .section-sub { color: rgba(250,250,248,0.65); }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.75rem;
+      margin-top: 3.5rem;
+    }
+    .trust-card {
+      background: rgba(250,250,248,0.04);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.75rem;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .trust-card:hover { background: rgba(201,168,76,0.07); transform: translateY(-4px); }
+    .trust-icon {
+      width: 52px; height: 52px;
+      background: rgba(201,168,76,0.12);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .trust-card h3 {
+      font-family: var(--ff-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+    .trust-card p { font-size: 0.88rem; color: rgba(250,250,248,0.6); line-height: 1.75; }
+
+    /* ── BENEFITS ────────────────────────────── */
+    #benefits { background: var(--gold-pale); }
+    .benefits-inner { max-width: 1100px; margin: 0 auto; }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+    .benefit-item {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .benefit-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .benefit-icon {
+      width: 64px; height: 64px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.75rem;
+      margin: 0 auto 1.25rem;
+    }
+    .benefit-item h3 {
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .benefit-item p { font-size: 0.85rem; color: var(--slate); line-height: 1.7; }
+
+    /* ── TESTIMONIALS ────────────────────────── */
+    #testimonials { background: var(--white); }
+    .testimonials-inner { max-width: 1100px; margin: 0 auto; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+    .testimonial-card {
+      background: var(--cream);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      position: relative;
+      transition: transform var(--transition);
+    }
+    .testimonial-card:hover { transform: translateY(-3px); }
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      font-family: var(--ff-display);
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--gold);
+      opacity: 0.25;
+    }
+    .stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 1rem;
+    }
+    .stars span { color: var(--gold); font-size: 1rem; }
+    .testimonial-text {
+      font-size: 0.95rem;
+      color: var(--slate);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .author-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--navy-mid);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .author-info strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .author-info span { font-size: 0.78rem; color: var(--slate-light); }
+
+    /* ── CTA BANNER ──────────────────────────── */
+    #cta {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, var(--navy) 100%);
+      text-align: center;
+      padding: 7rem 5%;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(201,168,76,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #cta .section-heading { color: var(--white); margin-bottom: 1.25rem; }
+    .cta-sub {
+      font-size: 1.1rem;
+      color: rgba(250,250,248,0.72);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.8;
+    }
+    .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .cta-disclaimer {
+      margin-top: 1.75rem;
+      font-size: 0.78rem;
+      color: rgba(250,250,248,0.35);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── FOOTER ──────────────────────────────── */
+    footer {
+      background: #08121C;
+      padding: 3rem 5% 2rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 3rem;
+      flex-wrap: wrap;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(250,250,248,0.07);
+      margin-bottom: 2rem;
+    }
+    .footer-brand .nav-brand { font-size: 1.1rem; display: block; margin-bottom: 0.5rem; }
+    .footer-brand p { font-size: 0.85rem; color: rgba(250,250,248,0.4); max-width: 260px; line-height: 1.7; }
+    .footer-nav h4 {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .footer-nav ul { display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-nav a { font-size: 0.85rem; color: rgba(250,250,248,0.5); transition: color var(--transition); }
+    .footer-nav a:hover { color: var(--white); }
+    .social-links { display: flex; gap: 0.75rem; }
+    .social-link {
+      width: 38px; height: 38px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(250,250,248,0.12);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(250,250,248,0.55);
+      font-size: 0.9rem;
+      transition: border-color var(--transition), color var(--transition), background var(--transition);
+    }
+    .social-link:hover { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.08); }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-bottom p { font-size: 0.78rem; color: rgba(250,250,248,0.3); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.78rem; color: rgba(250,250,248,0.35); transition: color var(--transition); }
+    .footer-links a:hover { color: var(--white); }
+    .affiliate-notice {
+      font-size: 0.72rem;
+      color: rgba(250,250,248,0.25);
+      max-width: 1100px;
+      margin: 1.5rem auto 0;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(250,250,248,0.04);
+      line-height: 1.6;
+    }
+
+    /* ── ANIMATIONS ──────────────────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1), transform 0.65s cubic-bezier(0.4,0,0.2,1);
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-up:nth-child(1) { transition-delay: 0s; }
+    .fade-up:nth-child(2) { transition-delay: 0.1s; }
+    .fade-up:nth-child(3) { transition-delay: 0.2s; }
+    .fade-up:nth-child(4) { transition-delay: 0.3s; }
+    .fade-up:nth-child(5) { transition-delay: 0.4s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* ── RESPONSIVE ──────────────────────────── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-copy { padding: 5rem 6% 3rem; }
+      .hero-visual { min-height: 340px; }
+      .hero-image-wrap { min-height: 340px; }
+      .author-photo-placeholder { min-height: 340px; }
+      .about-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-image-wrap { max-width: 320px; margin: 0 auto; }
+      .books-header { flex-direction: column; align-items: flex-start; }
+      .footer-top { flex-direction: column; }
+      nav { padding: 1rem 5%; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: rgba(13,27,42,0.98);
+        padding: 1.5rem 5%;
+        gap: 1.25rem;
+        border-bottom: 1px solid rgba(201,168,76,0.2);
+      }
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 4.5rem 5%; }
+      .hero-copy { padding: 4.5rem 5% 2.5rem; }
+      .hero-ctas { flex-direction: column; }
+      .btn-primary, .btn-secondary { justify-content: center; }
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ── NAV ── -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-brand" aria-label="Author homepage">Larry <span>French</span></a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="nav-cta" aria-label="View books on Amazon (opens in new tab)">View on Amazon</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <main id="main">
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Licensed Counselor &amp; Marriage Therapist · 40+ Years of Practice</p>
+      <h1 id="hero-heading">
+        Real Help for<br>
+        <em>Real Struggles</em> —<br>
+        From Someone <em>Who Knows</em>
+      </h1>
+      <p class="hero-sub">
+        Books written from over four decades inside the counseling room — practical, faith-grounded guidance for marriage challenges, recovery, emotional healing, and personal transformation.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-primary" aria-label="View all books on Amazon">
+          View Books on Amazon
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#books" class="btn-secondary">Start Your Journey Today</a>
+      </div>
+      <div class="hero-trust" role="list" aria-label="Author credentials at a glance">
+        <div class="hero-trust-item" role="listitem">
+          <span class="trust-num">43+</span>
+          <span class="trust-label">Years AAMFT Member</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="hero-trust-item" role="listitem">
+          <span class="trust-num">Level III</span>
+          <span class="trust-label">Gottman Trained</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="hero-trust-item" role="listitem">
+          <span class="trust-num">LPC &amp; LMFT</span>
+          <span class="trust-label">Dual Licensed VA</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-image-wrap">
+        <div class="author-photo-placeholder">
+          <div class="photo-icon">
+            <svg width="48" height="48" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" stroke="#C9A84C" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <p>Author Photo Here</p>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <strong>Larry L. French</strong>
+        <span>M.A. · LPC · LMFT · Gottman Level III</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="about-inner">
+      <div class="about-image-wrap" aria-hidden="true">
+        <div class="about-photo-placeholder">
+          <div class="photo-icon">
+            <svg width="40" height="40" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" stroke="#C9A84C" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <p>Professional Headshot</p>
+        </div>
+        <div class="about-accent" aria-hidden="true"></div>
+      </div>
+      <div>
+        <p class="section-label">About the Author</p>
+        <h2 id="about-heading" class="section-heading">Four Decades of Walking Families Toward Healing</h2>
+        <div class="credentials" role="list" aria-label="Professional credentials">
+          <span class="credential-tag" role="listitem">M.A. Marriage, Family &amp; Child Counseling</span>
+          <span class="credential-tag" role="listitem">Licensed Professional Counselor (LPC)</span>
+          <span class="credential-tag" role="listitem">Licensed Marriage &amp; Family Therapist (LMFT)</span>
+          <span class="credential-tag" role="listitem">Gottman Couples Therapy — Level III</span>
+          <span class="credential-tag" role="listitem">Focus on the Family Referral Resource</span>
+          <span class="credential-tag" role="listitem">43-Year AAMFT Member</span>
+        </div>
+        <p class="about-bio">
+          Larry L. French is a Licensed Professional Counselor and Licensed Marriage and Family Therapist with a Master of Arts in Marriage, Family and Child Counseling from Azusa Pacific University. He is the founder and Executive Director of the <strong>Virginia Center for Family Relations</strong> — a Christian counseling practice dedicated to helping individuals, couples, and families find healing rooted in both clinical excellence and faith.
+        </p>
+        <p class="about-bio">
+          Having completed all three levels of the Gottman Training for Marriage Counseling, Larry brings research-backed couples therapy approaches alongside his deep grounding in Family Systems and Cognitive Behavioral Therapy. He has served as a Clinical Supervisor with the AAMFT, a Counselor Supervisor with the Virginia Board of Professional Counselors, and a Field Practicum Supervisor with the University of Virginia. He is a trusted referral resource for Focus on the Family and a long-standing member of the American Association of Christian Counselors.
+        </p>
+        <p class="about-bio">
+          Before entering the counseling profession, Larry served four years in the United States Coast Guard — including search and rescue flights out of Miami. That grounding in service, courage, and human care has shaped everything he does as a counselor, supervisor, and now as an author.
+        </p>
+        <div class="mission-quote">
+          <p>"My deepest desire is to provide the finest psychological care that flows from a Christian world and life view — to help facilitate healing for the emotional and relational hurts of individuals and families in our community."</p>
+        </div>
+        <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;" aria-label="View all books by Larry French on Amazon">Explore All Books on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOOKS ── -->
+  <section id="books" aria-labelledby="books-heading">
+    <div class="books-header">
+      <div>
+        <p class="section-label">Featured Books</p>
+        <h2 id="books-heading" class="section-heading">Written for Every Stage<br>of Your Journey</h2>
+      </div>
+      <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-secondary" style="color: var(--navy); border-color: var(--navy);" aria-label="Browse full collection on Amazon">See Full Collection →</a>
+    </div>
+    <div class="books-grid">
+
+      <article class="book-card fade-up" aria-labelledby="book1-title">
+        <div class="book-cover book-cover-1" role="img" aria-label="Book cover placeholder for Let Me Draw You a Picture">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="book-cover-placeholder">
+            <div class="cover-icon">📖</div>
+            <div class="cover-title">Let Me Draw You a Picture</div>
+            <div class="cover-label">Book Cover Placeholder</div>
+          </div>
+          <span class="book-badge">Available Now</span>
+        </div>
+        <div class="book-body">
+          <p class="book-category">Counseling &amp; Personal Growth</p>
+          <h3 id="book1-title" class="book-title">Let Me Draw You a Picture: Solutions for Life's Challenges</h3>
+          <p class="book-desc">Drawing on decades of counseling experience, Larry French uses clear, visual thinking to help readers understand themselves, their relationships, and the path toward genuine change.</p>
+          <ul class="book-benefits" aria-label="Key benefits">
+            <li>Cut through confusion with simple, visual frameworks</li>
+            <li>Apply proven counseling principles to your real life</li>
+            <li>Understand the root of relational and emotional patterns</li>
+            <li>Take practical steps toward lasting transformation</li>
+          </ul>
+          <a href="https://www.amazon.com/Let-Draw-You-Picture-Solutions/dp/B0FV1ZBF4Q/" target="_blank" rel="noopener" class="btn-amazon" aria-label="Purchase Let Me Draw You a Picture on Amazon">
+            Buy on Amazon
+            <span class="amazon-logo">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="book-card fade-up" aria-labelledby="book2-title">
+        <div class="book-cover book-cover-2" role="img" aria-label="Book cover placeholder for Heal & Rise">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="book-cover-placeholder">
+            <div class="cover-icon">📖</div>
+            <div class="cover-title">Heal & Rise</div>
+            <div class="cover-label">Book Cover Placeholder</div>
+          </div>
+        </div>
+        <div class="book-body">
+          <p class="book-category">Divorce Recovery</p>
+          <h3 id="book2-title" class="book-title">Heal & Rise: Rebuilding Your Life After Divorce</h3>
+          <p class="book-desc">A warm, honest guide through the grief, confusion, and unexpected freedom that follows divorce — helping you find clarity, identity, and hope again.</p>
+          <ul class="book-benefits" aria-label="Key benefits">
+            <li>Navigate the emotional stages of divorce</li>
+            <li>Rediscover your identity and purpose</li>
+            <li>Set healthy boundaries with an ex-spouse</li>
+            <li>Open yourself to a meaningful future</li>
+          </ul>
+          <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-amazon" aria-label="Purchase Heal & Rise on Amazon">
+            Buy on Amazon
+            <span class="amazon-logo">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="book-card fade-up" aria-labelledby="book3-title">
+        <div class="book-cover book-cover-3" role="img" aria-label="Book cover placeholder for The Connected Marriage">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="book-cover-placeholder">
+            <div class="cover-icon">📖</div>
+            <div class="cover-title">The Connected Marriage</div>
+            <div class="cover-label">Book Cover Placeholder</div>
+          </div>
+          <span class="book-badge">Top Rated</span>
+        </div>
+        <div class="book-body">
+          <p class="book-category">Marriage & Relationships</p>
+          <h3 id="book3-title" class="book-title">The Connected Marriage: Strengthening Your Bond for Life</h3>
+          <p class="book-desc">Practical tools for couples who want more — more intimacy, more communication, and more of the partnership they always imagined marriage could be.</p>
+          <ul class="book-benefits" aria-label="Key benefits">
+            <li>Reignite emotional and physical intimacy</li>
+            <li>Communicate through conflict without damage</li>
+            <li>Align on finances, parenting, and future goals</li>
+            <li>Build a lasting partnership rooted in respect</li>
+          </ul>
+          <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-amazon" aria-label="Purchase The Connected Marriage on Amazon">
+            Buy on Amazon
+            <span class="amazon-logo">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="book-card fade-up" aria-labelledby="book4-title">
+        <div class="book-cover book-cover-4" role="img" aria-label="Book cover placeholder for Unbroken">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="book-cover-placeholder">
+            <div class="cover-icon">📖</div>
+            <div class="cover-title">Unbroken</div>
+            <div class="cover-label">Book Cover Placeholder</div>
+          </div>
+        </div>
+        <div class="book-body">
+          <p class="book-category">Emotional Healing</p>
+          <h3 id="book4-title" class="book-title">Unbroken: A Journey from Emotional Wounds to Wholeness</h3>
+          <p class="book-desc">For anyone carrying invisible wounds from their past — this book offers a safe, structured path from pain and emotional shutdown toward genuine healing.</p>
+          <ul class="book-benefits" aria-label="Key benefits">
+            <li>Identify and name your emotional pain patterns</li>
+            <li>Release trauma stored in the body and mind</li>
+            <li>Rebuild self-worth and emotional safety</li>
+            <li>Step into authentic, vulnerable connection</li>
+          </ul>
+          <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-amazon" aria-label="Purchase Unbroken on Amazon">
+            Buy on Amazon
+            <span class="amazon-logo">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="book-card fade-up" aria-labelledby="book5-title">
+        <div class="book-cover book-cover-5" role="img" aria-label="Book cover placeholder for Becoming">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="book-cover-placeholder">
+            <div class="cover-icon">📖</div>
+            <div class="cover-title">Becoming</div>
+            <div class="cover-label">Book Cover Placeholder</div>
+          </div>
+          <span class="book-badge">New Release</span>
+        </div>
+        <div class="book-body">
+          <p class="book-category">Personal Growth</p>
+          <h3 id="book5-title" class="book-title">Becoming: A 90-Day Guide to Personal Transformation</h3>
+          <p class="book-desc">A daily guided journey through reflection, action, and accountability — designed for adults ready to finally close the gap between the life they have and the life they want.</p>
+          <ul class="book-benefits" aria-label="Key benefits">
+            <li>Daily reflections and actionable exercises</li>
+            <li>Break through self-limiting beliefs</li>
+            <li>Build habits aligned with your deepest values</li>
+            <li>Track real progress over 90 days</li>
+          </ul>
+          <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-amazon" aria-label="Purchase Becoming on Amazon">
+            Buy on Amazon
+            <span class="amazon-logo">↗</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── TRUST ── -->
+  <section id="trust" aria-labelledby="trust-heading">
+    <div class="trust-inner">
+      <p class="section-label" style="color: var(--gold-light);">Why Readers Trust These Books</p>
+      <h2 id="trust-heading" class="section-heading">Guidance You Can Actually Use</h2>
+      <p class="section-sub">Every book is grounded in clinical practice, compassionate in tone, and built around real-world application — not theory.</p>
+      <div class="trust-grid">
+        <div class="trust-card fade-up">
+          <div class="trust-icon" aria-hidden="true">🎓</div>
+          <h3>Clinical Expertise</h3>
+          <p>Written by a licensed counselor with over a decade of direct client experience — not just research, but real therapeutic work.</p>
+        </div>
+        <div class="trust-card fade-up">
+          <div class="trust-icon" aria-hidden="true">🗺</div>
+          <h3>Real-World Strategies</h3>
+          <p>Each chapter closes with concrete exercises, scripts, and action steps — tools you can use this week, not someday.</p>
+        </div>
+        <div class="trust-card fade-up">
+          <div class="trust-icon" aria-hidden="true">💛</div>
+          <h3>Compassionate Tone</h3>
+          <p>Written without judgment, shame, or clinical distance. These books meet you exactly where you are.</p>
+        </div>
+        <div class="trust-card fade-up">
+          <div class="trust-icon" aria-hidden="true">✅</div>
+          <h3>Proven Principles</h3>
+          <p>Grounded in evidence-based approaches including CBT, attachment theory, and motivational interviewing.</p>
+        </div>
+        <div class="trust-card fade-up">
+          <div class="trust-icon" aria-hidden="true">🔄</div>
+          <h3>Practical Exercises</h3>
+          <p>Reflection prompts, worksheets, and guided journaling woven throughout each book to drive real progress.</p>
+        </div>
+        <div class="trust-card fade-up">
+          <div class="trust-icon" aria-hidden="true">🌱</div>
+          <h3>Long-Term Results</h3>
+          <p>Focused on sustainable change — not quick fixes. Readers return to these books again and again as they grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BENEFITS ── -->
+  <section id="benefits" aria-labelledby="benefits-heading">
+    <div class="benefits-inner">
+      <div style="text-align:center; max-width: 580px; margin: 0 auto 3.5rem;">
+        <p class="section-label">What Readers Gain</p>
+        <h2 id="benefits-heading" class="section-heading">The Life You're Working Toward Is Possible</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">🧭</div>
+          <h3>Regain Control of Your Life</h3>
+          <p>Move from feeling stuck or overwhelmed to having a clear direction and the confidence to walk it.</p>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">💞</div>
+          <h3>Build Stronger Relationships</h3>
+          <p>Communicate better, connect deeper, and show up as the partner, parent, and friend you want to be.</p>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">🩹</div>
+          <h3>Heal Emotional Wounds</h3>
+          <p>Process past pain in a structured, safe way — and finally stop letting yesterday define tomorrow.</p>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">⚡</div>
+          <h3>Develop Healthy Habits</h3>
+          <p>Replace destructive patterns with routines that energize, ground, and sustain your recovery and growth.</p>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">🌟</div>
+          <h3>Create Lasting Change</h3>
+          <p>Tools and mindsets that last — not just for the hard season you're in now, but for every chapter ahead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section id="testimonials" aria-labelledby="reviews-heading">
+    <div class="testimonials-inner">
+      <p class="section-label">Reader Reviews</p>
+      <h2 id="reviews-heading" class="section-heading">Real Stories. Real Change.</h2>
+      <div class="testimonials-grid">
+
+        <blockquote class="testimonial-card fade-up">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="testimonial-text">"I've read a lot of recovery books and most of them felt clinical or preachy. This one felt like sitting across from a counselor who actually understood what I was going through. I've recommended it to everyone in my support group."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">M</div>
+            <div class="author-info">
+              <strong>Marcus T.</strong>
+              <span>Verified Amazon Reviewer</span>
+            </div>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonial-card fade-up">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="testimonial-text">"After my divorce I didn't know who I was anymore. Heal & Rise gave me a framework when I had nothing. The exercises helped me stop just surviving and start actually living again. I read it twice."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">S</div>
+            <div class="author-info">
+              <strong>Sandra L.</strong>
+              <span>Verified Amazon Reviewer</span>
+            </div>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonial-card fade-up">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="testimonial-text">"My husband and I did The Connected Marriage together — one chapter per week. It opened up conversations we'd never had in 12 years. Practical, honest, and it actually works."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">R</div>
+            <div class="author-info">
+              <strong>Renée &amp; David K.</strong>
+              <span>Verified Amazon Reviewer</span>
+            </div>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonial-card fade-up">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="testimonial-text">"Becoming is the book I wish I had ten years ago. The 90-day structure kept me accountable and the daily prompts were genuinely powerful. I filled it with notes. Already bought a copy for my sister."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">J</div>
+            <div class="author-info">
+              <strong>Jerome A.</strong>
+              <span>Verified Amazon Reviewer</span>
+            </div>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonial-card fade-up">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="testimonial-text">"I bought Unbroken on a whim during a really dark season. It helped me name things I'd been carrying for years. I cried, I journaled, I healed. I can't say enough good things about this book."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">T</div>
+            <div class="author-info">
+              <strong>Tamika W.</strong>
+              <span>Verified Amazon Reviewer</span>
+            </div>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonial-card fade-up">
+          <div class="stars" aria-label="4 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="testimonial-text">"As a counselor myself, I recommend Breaking Free to clients regularly. The language is accessible without being dumbed down, and the exercises are clinically sound. An exceptional resource."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">P</div>
+            <div class="author-info">
+              <strong>Dr. Patricia M., LPC</strong>
+              <span>Verified Amazon Reviewer</span>
+            </div>
+          </div>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section id="cta" aria-labelledby="cta-heading">
+    <p class="section-label" style="color: var(--gold-light); text-align:center;">Your Next Chapter</p>
+    <h2 id="cta-heading" class="section-heading" style="text-align:center;">Your Next Chapter Starts Today</h2>
+    <p class="cta-sub">The guidance, tools, and encouragement you need to move forward with confidence. Every book is a step — and the first step is the only one that matters right now.</p>
+    <div class="cta-btns">
+      <a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener" class="btn-primary" aria-label="Shop all books on Amazon">
+        Shop Books on Amazon
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#books" class="btn-secondary">Browse by Topic</a>
+    </div>
+    <p class="cta-disclaimer">All books available on Amazon in Kindle, Paperback, and Hardcover editions.</p>
+  </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-brand">Larry <span>French</span></a>
+          <p>Licensed Professional Counselor &amp; Marriage and Family Therapist. Founder, Virginia Center for Family Relations. Charlottesville, VA.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About the Author</a></li>
+            <li><a href="#books">Featured Books</a></li>
+            <li><a href="#testimonials">Reader Reviews</a></li>
+            <li><a href="https://www.amazon.com/stores/author/B0FV5RBMQY" target="_blank" rel="noopener">Amazon Author Page ↗</a></li>          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Legal links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-nav" style="font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; font-weight:600;">Follow Along</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">Li</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Larry French. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <p class="affiliate-notice">
+        <strong style="color:rgba(250,250,248,0.45);">Affiliate Disclosure:</strong> This website may contain affiliate links to Amazon. As an Amazon Associate, the author may earn a small commission from qualifying purchases at no additional cost to you. All book recommendations are genuine and based on the author's own work.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Scroll-triggered fade-up animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Smooth nav background on scroll
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.boxShadow = window.scrollY > 50 ? '0 4px 20px rgba(0,0,0,0.3)' : 'none';
+    }, { passive: true });
+  </script>
+</body>
+</html>
